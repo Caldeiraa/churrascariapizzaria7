@@ -1,40 +1,88 @@
+/* =========================================
+   BASE E ESTRUTURA
+   ========================================= */
 .pagina {
   background: #d6a86b;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 40px 10px;
+  padding: 15px 5px; /* Menos padding lateral no mobile */
 }
 
 .cardapio {
   width: 100%;
   max-width: 1200px;
   background: #e8d2a8;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-  margin-bottom: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  margin-bottom: 30px;
+  border-radius: 8px; /* Cantos levemente arredondados deixam mais moderno */
+  overflow: hidden; /* Garante que imagens não vazem da borda arredondada */
 }
 
+/* =========================================
+   TIPOGRAFIA RESPONSIVA
+   ========================================= */
 .header {
   background: #000;
   color: #d6a86b;
   text-align: center;
-  padding: 20px;
-  letter-spacing: 2px;
+  padding: 15px;
+  letter-spacing: 1px;
 }
 
+/* Clamp: (mínimo, flexível, máximo) - perfeito para responsividade */
+.header h1 {
+  font-size: clamp(20px, 4vw, 32px);
+  margin: 0;
+  font-weight: bold;
+}
+
+.conteudo {
+  padding: 25px 15px; /* Menos padding no celular */
+  color: #000;
+}
+
+.categoria {
+  font-size: clamp(18px, 3.5vw, 26px);
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.item {
+  /* No celular fica 16px, no PC vai até 22px */
+  font-size: clamp(16px, 3vw, 22px); 
+  font-weight: 600;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.descItem {
+  font-size: clamp(14px, 2vw, 17px);
+  margin-bottom: 20px;
+  color: #444;
+  line-height: 1.4;
+}
+
+/* =========================================
+   IMAGENS RESPONSIVAS
+   ========================================= */
 .imagens img {
-  height: 280px;
+  height: 150px; /* Menor no celular */
   object-fit: cover;
   width: 100%;
   display: block;
 }
 
-/* =========================================
-   ESTILOS PARA AS IMAGENS LATERAIS VERTICAIS
-   ========================================= */
+.chapa {
+  height: 200px; /* Menor no celular */
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
 
-/* Mobile: Imagens empilhadas tem altura fixa para não sumirem */
+/* Esconde as imagens verticais de drinks no celular para poupar espaço de rolagem */
 .imagens-verticais {
   display: flex;
   flex-direction: column;
@@ -42,13 +90,88 @@
 
 .imagens-verticais img {
   width: 100%;
-  height: 200px; /* Altura fixa no celular quando a coluna desce */
   object-fit: cover;
   display: block;
 }
 
-/* Desktop: A mágica do flexbox para preencher toda a altura da tela */
+/* =========================================
+   SEÇÃO DE PIZZAS
+   ========================================= */
+.preco-especial {
+  font-size: clamp(12px, 2vw, 15px);
+  font-weight: bold;
+  margin-top: -10px;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+.caixa-precos-pizza {
+  border: 2px solid #d6a86b; 
+  background: rgba(214, 168, 107, 0.2);
+  padding: 15px 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.caixa-precos-pizza h5 {
+  color: #000;
+  font-size: clamp(16px, 3vw, 20px);
+  letter-spacing: 1px;
+}
+
+.pizza-size p {
+  font-size: clamp(13px, 2.5vw, 16px);
+  font-weight: 600;
+}
+
+.obs-pizza {
+  font-size: 13px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.borda-pizza {
+  font-size: clamp(14px, 2.5vw, 18px);
+  color: #000;
+  margin-bottom: 0;
+}
+
+/* =========================================
+   RODAPÉ
+   ========================================= */
+.rodape {
+  padding: 15px;
+  background-color: #f7e6c4; /* Dá um leve destaque ao rodapé */
+}
+
+.logoRodape {
+  width: 50px; /* Menor no mobile */
+}
+
+/* =========================================
+   AJUSTES PARA TABLET E DESKTOP (PC)
+   ========================================= */
 @media (min-width: 768px) {
+  .pagina {
+    padding: 40px 20px;
+  }
+  
+  .conteudo {
+    padding: 40px;
+  }
+
+  .imagens img {
+    height: 280px; /* Volta ao tamanho original no PC */
+  }
+
+  .chapa {
+    height: 500px;
+  }
+  
+  .logoRodape {
+    width: 70px;
+  }
+
   .stretch-row {
     display: flex;
     align-items: stretch;
@@ -60,86 +183,7 @@
   
   .imagens-verticais img {
     flex: 1 1 0;
-    height: 0; /* A mágica para forçar o flexbox a preencher todo o espaço vertical */
+    height: 0; 
     min-height: 0;
   }
-}
-
-.conteudo {
-  padding: 40px;
-  color: #000;
-}
-
-.categoria {
-  font-weight: bold;
-  margin-bottom: 20px;
-  color: #000;
-}
-
-.item {
-  font-size: 25px;
-  margin-bottom: 6px;
-}
-
-.descItem {
-  font-size: 18px;
-  margin-bottom: 20px;
-  color: #333;
-}
-
-.rodape {
-  padding: 20px;
-}
-
-.logoRodape {
-  width: 70px;
-}
-
-.img3 {
-  width: 100%;
-}
-
-.chapa {
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
-  display: block;
-}
-
-/* =========================================
-   ESTILOS PARA A SEÇÃO DE PIZZAS 
-   ========================================= */
-
-.preco-especial {
-  font-size: 15px;
-  font-weight: bold;
-  margin-top: -15px;
-  margin-bottom: 25px;
-  color: #000;
-}
-
-.caixa-precos-pizza {
-  border: 2px solid #d6a86b; 
-  background: rgba(214, 168, 107, 0.2);
-  padding: 20px;
-  border-radius: 10px;
-  max-width: 90%;
-}
-
-.caixa-precos-pizza h5 {
-  color: #000;
-  font-size: 20px;
-  letter-spacing: 1px;
-}
-
-.obs-pizza {
-  font-size: 14px;
-  color: #333;
-  margin-bottom: 10px;
-}
-
-.borda-pizza {
-  font-size: 18px;
-  color: #000;
-  margin-bottom: 0;
 }

@@ -1,34 +1,33 @@
-import React from 'react'
-import LogoImg from './img/Logo.jpeg'
-import Chapa from './img/chapa.jpg'
-import Entrada from './img/entrada.jpg'
-import Guarnicao from './img/guarnicao.jpg'
-import Executivo from './img/executivo.jpg'
-import Churrasco from './img/churrasco.jpg'
-import Picanha from './img/picanha.jpg'
-import Marguerita from './img/marguerita.jpg'
-import Portuguesa from './img/portuguesa.jpg'
-import Morango from './img/morango.jpg'
-import Banana from './img/banana.png'
-import Brigadeiro from './img/brigadeiro.png'
-import Petit from './img/petit_gateau.png'
-import Peixe from './img/peixe.png'
-import Peixe2 from './img/peixe2.jpg'
-import Caipirinha from './img/caipirinha.png'
-import Drink from './img/tropical.png'
-import Drink2 from './img/drink.jpg'
-import Drink3 from './img/drink2.jpg'
-import Laranja from './img/laranja.png'
-import Coca from './img/coca.jpg'
-import Agua from './img/agua.jpeg'
-import Drink4 from './img/drink3.jpg'
-import Cachaca from './img/cachaca.png'
-import Cachaca2 from './img/cachaca2.jpg'
-import Vinho from './img/vinho.jpg'
-import Chopp from './img/chop.png'
+import React from 'react';
+import LogoImg from './img/Logo.jpeg';
+import Chapa from './img/chapa.jpg';
+import Entrada from './img/entrada.jpg';
+import Guarnicao from './img/guarnicao.jpg';
+import Executivo from './img/executivo.jpg';
+import Churrasco from './img/churrasco.jpg';
+import Picanha from './img/picanha.jpg';
+import Marguerita from './img/marguerita.jpg';
+import Portuguesa from './img/portuguesa.jpg';
+import Morango from './img/morango.jpg';
+import Banana from './img/banana.png';
+import Brigadeiro from './img/brigadeiro.png';
+import Petit from './img/petit_gateau.png';
+import Peixe from './img/peixe.png';
+import Peixe2 from './img/peixe2.jpg';
+import Caipirinha from './img/caipirinha.png';
+import Drink from './img/tropical.png';
+import Drink2 from './img/drink.jpg';
+import Drink3 from './img/drink2.jpg';
+import Laranja from './img/laranja.png';
+import Coca from './img/coca.jpg';
+import Agua from './img/agua.jpeg';
+import Drink4 from './img/drink3.jpg';
+import Cachaca from './img/cachaca.png';
+import Cachaca2 from './img/cachaca2.jpg';
+import Vinho from './img/vinho.jpg';
+import Chopp from './img/chop.png';
 
-
-function index() {
+function Cardapio() {
   return (
     <div className="pagina">
 
@@ -63,7 +62,7 @@ function index() {
           <Item cod="0023" nome="TORRESMO COM AIPIM" preco="R$45,00" />
           <Item cod="0010" nome="BOLINHO DE COSTELA" preco="R$50,00" />
 
-          <h3 className="categoria mt-4">GUARNIÇÕES</h3>
+          <h3 className="categoria mt-5">GUARNIÇÕES</h3>
           <Item cod="0027" nome="ARROZ BRANCO" preco="R$15,00" />
           <Item cod="0028" nome="FEIJÃO TROPEIRO" preco="R$30,00" />
           <Item cod="0029" nome="FEIJÃO EM CALDO" preco="R$15,00" />
@@ -74,7 +73,7 @@ function index() {
       </div>
 
       {/* PAGINA 2 - CARNES NA CHURRASQUEIRA */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>CARNES NA CHURRASQUEIRA</h1>
         </div>
@@ -89,7 +88,7 @@ function index() {
         </div>
 
         <div className="conteudo">
-          <h3 className="categoria text-center">CARNES NA CHURRASQUEIRA COM ACOMPANHAMENTO</h3>
+          <h3 className="categoria text-center">COM ACOMPANHAMENTO</h3>
           <div className="row">
             <div className="col-md-6">
               <Item cod="0001" nome="PICANHA DA RUA 7" preco="R$160,00" />
@@ -112,7 +111,7 @@ function index() {
               <Item cod="0010" nome="ESPETO DE CORAÇÃO DE FRANGO (20 UN.)" preco="R$30,00" />
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 mt-4 mt-md-0">
               <Item cod="0011" nome="PÃO DE ALHO (UN.)" preco="R$10,00" />
               <Item cod="0012" nome="QUEIJO COALHO (300G)" preco="R$45,00" />
               <Item cod="0013" nome="SALADA FRESCA" preco="R$50,00" />
@@ -135,7 +134,7 @@ function index() {
       </div>
 
       {/* PAGINA 3 - CHAPA */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>CHAPA</h1>
         </div>
@@ -163,7 +162,7 @@ function index() {
       </div>
 
       {/* PAGINA 4 - EXECUTIVO */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>EXECUTIVO</h1>
         </div>
@@ -188,7 +187,7 @@ function index() {
       </div>
 
       {/* PAGINA 5 - PIZZAS SALGADAS */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>PIZZAS SALGADAS</h1>
         </div>
@@ -245,22 +244,22 @@ function index() {
 
               <Item cod="0048" nome="BACALHAU*" />
               <Desc texto="Mussarela, molho de tomate, bacalhau, palmito, cebola, azeitona e orégano." />
-              <p className="preco-especial">* [ 6 fatias: P: R$53,00 / 8 fatias: M: R$63,00 / 10 fatias: G: R$73,00 ]</p>
+              <p className="preco-especial">* [ 6 fat: P: R$53,00 / 8 fat: M: R$63,00 / 10 fat: G: R$73,00 ]</p>
 
               <div className="caixa-precos-pizza mt-4 mx-auto text-center">
-                <h5 className="font-weight-bold mb-4">TAMANHOS E PREÇOS PIZZAS SALGADAS**</h5>
+                <h5 className="font-weight-bold mb-3">TAMANHOS E PREÇOS</h5>
                 
-                <div className="d-flex justify-content-around align-items-center mb-3">
-                  <div className="text-center">
-                    <p className="mb-1" style={{ fontSize: '18px' }}>6 FATIAS:<br/>P R$48,00</p>
+                <div className="d-flex justify-content-around flex-wrap align-items-center mb-3 gap-2">
+                  <div className="text-center pizza-size">
+                    <p className="mb-1">6 FATIAS<br/>P R$48,00</p>
                     <IconePizza fatias={6} />
                   </div>
-                  <div className="text-center">
-                    <p className="mb-1" style={{ fontSize: '18px' }}>8 FATIAS:<br/>M R$58,00</p>
+                  <div className="text-center pizza-size">
+                    <p className="mb-1">8 FATIAS<br/>M R$58,00</p>
                     <IconePizza fatias={8} />
                   </div>
-                  <div className="text-center">
-                    <p className="mb-1" style={{ fontSize: '18px' }}>10 FATIAS:<br/>G R$68,00</p>
+                  <div className="text-center pizza-size">
+                    <p className="mb-1">10 FATIAS<br/>G R$68,00</p>
                     <IconePizza fatias={10} />
                   </div>
                 </div>
@@ -287,7 +286,7 @@ function index() {
       </div>
 
       {/* PAGINA 6 - PIZZAS DOCES E SOBREMESAS */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         
         {/* PIZZAS DOCES */}
         <div className="header">
@@ -296,7 +295,6 @@ function index() {
 
         <div className="conteudo">
           <div className="row text-center align-items-center">
-            {/* Itens na esquerda */}
             <div className="col-md-7 mb-4">
               <Item cod="0049" nome="BANANA" />
               <Desc texto="Mussarela, banana, canela, açúcar e leite condensado." />
@@ -306,25 +304,24 @@ function index() {
 
               <Item cod="0051" nome="BRIGADEIRO COM MORANGO*" />
               <Desc texto="Chocolate, leite condensado e morango." />
-              <p className="preco-especial">* [ 6 fatias: P: R$48,00 / 8 fatias: M: R$58,00 / 10 fatias: G: R$60,00 ]</p>
+              <p className="preco-especial">* [ 6 fat: P: R$48,00 / 8 fat: M: R$58,00 / 10 fat: G: R$60,00 ]</p>
             </div>
 
-            {/* Tabela de Preços na direita */}
             <div className="col-md-5">
               <div className="caixa-precos-pizza mx-auto w-100 text-center">
-                <h5 className="font-weight-bold mb-4">TAMANHOS E PREÇOS PIZZAS DOCES**</h5>
+                <h5 className="font-weight-bold mb-3">TAMANHOS E PREÇOS</h5>
                 
-                <div className="d-flex justify-content-around align-items-center mb-3">
-                  <div className="text-center">
-                    <p className="mb-1" style={{ fontSize: '18px' }}>6 FATIAS:<br/>P R$45,00</p>
+                <div className="d-flex justify-content-around flex-wrap align-items-center mb-3 gap-2">
+                  <div className="text-center pizza-size">
+                    <p className="mb-1">6 FATIAS<br/>P R$45,00</p>
                     <IconePizza fatias={6} />
                   </div>
-                  <div className="text-center">
-                    <p className="mb-1" style={{ fontSize: '18px' }}>8 FATIAS:<br/>M R$50,00</p>
+                  <div className="text-center pizza-size">
+                    <p className="mb-1">8 FATIAS<br/>M R$50,00</p>
                     <IconePizza fatias={8} />
                   </div>
-                  <div className="text-center">
-                    <p className="mb-1" style={{ fontSize: '18px' }}>10 FATIAS:<br/>G R$55,00</p>
+                  <div className="text-center pizza-size">
+                    <p className="mb-1">10 FATIAS<br/>G R$55,00</p>
                     <IconePizza fatias={10} />
                   </div>
                 </div>
@@ -362,7 +359,7 @@ function index() {
             <Item cod="0052" nome="PETIT GATEAU" preco="R$28,00" />
             <Desc texto="Acompanha bola de sorvete de creme." />
 
-            <div className="mt-5">
+            <div className="mt-4 mt-md-5">
               <Item cod="111" nome="TAÇA DA FELICIDADE" preco="R$28,00" />
               <Desc texto="Brigadeiro, morango e sorvete." />
             </div>
@@ -375,7 +372,7 @@ function index() {
       </div>
 
       {/* PAGINA 7 - PEIXES */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>PEIXES</h1>
         </div>
@@ -410,14 +407,13 @@ function index() {
       </div>
 
       {/* PAGINA 8 - BEBIDAS (DRINKS) */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>BEBIDAS</h1>
         </div>
 
-        {/* ATENÇÃO AQUI: Adicionei stretch-row na div.row */}
         <div className="row m-0 stretch-row">
-          <div className="col-md-4 p-0 imagens-verticais">
+          <div className="col-md-4 p-0 imagens-verticais d-none d-md-flex">
             <img src={Caipirinha} alt="Drink 1" />
             <img src={Drink} alt="Drink 2" />
             <img src={Drink2} alt="Drink 3" />
@@ -445,7 +441,7 @@ function index() {
             <Item cod="0056" nome="DELÍCIA DE MORANGO" preco="R$28,00" />
             <Desc texto="Morango, limão, Smirnoff e xarope de morango." />
 
-            <Item cod="0057" nome="GIN TÔNICA TRADICIONAL OU SABORISADA" preco="R$28,00" />
+            <Item cod="0057" nome="GIN TÔNICA TRADICIONAL / SABORISADA" preco="R$28,00" />
             <Desc texto="Gin, tônica e xarope a escolha." />
 
             <Item cod="0058" nome="GIN TROPICAL" preco="R$28,00" />
@@ -486,12 +482,11 @@ function index() {
       </div>
 
       {/* PAGINA 9 - BEBIDAS (DRINKS SEM ÁLCOOL, SUCOS E REFRIGERANTES) */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>BEBIDAS</h1>
         </div>
 
-        {/* ATENÇÃO AQUI: Adicionei stretch-row na div.row */}
         <div className="row m-0 stretch-row">
           <div className="col-md-8 conteudo text-center">
             
@@ -513,7 +508,7 @@ function index() {
 
             <h3 className="categoria mt-5 mb-1">SUCOS</h3>
             <h5 className="mb-0 font-weight-bold">R$12,00</h5>
-            <p className="mb-4" style={{fontSize: '14px', color: '#333'}}>*exceto laranja com acerola.</p>
+            <p className="mb-4 text-muted" style={{fontSize: '13px'}}>*exceto laranja com acerola.</p>
             
             <Item cod="0066" nome="ACEROLA" />
             <Item cod="0067" nome="MARACUJÁ" />
@@ -544,7 +539,7 @@ function index() {
             
           </div>
 
-          <div className="col-md-4 p-0 imagens-verticais">
+          <div className="col-md-4 p-0 imagens-verticais d-none d-md-flex">
             <img src={Laranja} alt="Suco 1" />
             <img src={Coca} alt="Suco 2" />
             <img src={Agua} alt="Suco 3" />
@@ -558,14 +553,13 @@ function index() {
       </div>
 
       {/* PAGINA 10 - BEBIDAS (CERVEJAS E ALCOÓLICAS) */}
-      <div className="cardapio mt-5">
+      <div className="cardapio mt-4">
         <div className="header">
           <h1>BEBIDAS</h1>
         </div>
 
-        {/* ATENÇÃO AQUI: Adicionei stretch-row na div.row */}
         <div className="row m-0 stretch-row">
-          <div className="col-md-4 p-0 imagens-verticais">
+          <div className="col-md-4 p-0 imagens-verticais d-none d-md-flex">
             <img src={Cachaca} alt="Bebida 1" />
             <img src={Cachaca2} alt="Bebida 2" />
             <img src={Vinho} alt="Bebida 3" />
@@ -575,8 +569,8 @@ function index() {
           <div className="col-md-8 conteudo text-center">
             
             <h3 className="categoria mb-4">CERVEJAS</h3>
-            <Item cod="0083" nome="CHOPP (PETRA PURO MALTE) (300ML)" preco="R$10,00" />
-            <Item cod="0084" nome="CHOPP (PETRA PURO MALTE) (500ML)" preco="R$15,00" />
+            <Item cod="0083" nome="CHOPP (PETRA) (300ML)" preco="R$10,00" />
+            <Item cod="0084" nome="CHOPP (PETRA) (500ML)" preco="R$15,00" />
             <Item cod="0086" nome="HEINEKEN (600ML)" preco="R$18,00" />
             <Item cod="1022" nome="AMSTEL (600ML)" preco="R$13,00" />
             <Item cod="1023" nome="PETRA (600ML)" preco="R$12,00" />
@@ -596,7 +590,7 @@ function index() {
 
             <h3 className="categoria mt-5 mb-4">VINHOS</h3>
             <Item cod="0098" nome="RESERVADO" preco="R$70,00" />
-            <Item cod="0099" nome="ESPUMANTE" preco="CONSULTAR VALORES" />
+            <Item cod="0099" nome="ESPUMANTE" preco="CONSULTAR" />
             <Item cod="0100" nome="PROSECCO" preco="R$80,00" />
             <Item cod="0101" nome="VINHO TAÇA" preco="R$15,00" />
 
@@ -616,7 +610,7 @@ function index() {
 function Item({ cod, nome, preco }) {
   return (
     <div className="item">
-      COD {cod} - {nome} {preco && `| ${preco}`}
+      <span className="text-muted" style={{fontSize: '0.8em'}}>COD {cod}</span> - {nome} {preco && `| ${preco}`}
     </div>
   );
 }
@@ -636,7 +630,7 @@ function IconePizza({ fatias }) {
   const corFatia = "#cfa872";
 
   return (
-    <svg viewBox="0 0 100 100" width="70" height="70" className="icone-pizza">
+    <svg viewBox="0 0 100 100" width="50" height="50" className="icone-pizza">
       <circle cx="50" cy="50" r="46" fill="none" stroke={corBorda} strokeWidth="3" />
       <circle cx="50" cy="50" r="40" fill="none" stroke={corBorda} strokeWidth="1.5" />
       {Array.from({ length: linhas }).map((_, index) => (
@@ -646,4 +640,4 @@ function IconePizza({ fatias }) {
   );
 }
 
-export default index
+export default Cardapio;
