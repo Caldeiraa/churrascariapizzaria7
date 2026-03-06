@@ -1,73 +1,145 @@
-.pagina{
-background:#d6a86b;
-min-height:100vh;
-display:flex;
-flex-direction:column;
-align-items:center;
-padding:40px 10px;
+.pagina {
+  background: #d6a86b;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 10px;
 }
 
-.cardapio{
-width:100%;
-max-width:1200px;
-background:#e8d2a8;
-box-shadow:0 0 20px rgba(0,0,0,0.5);
-margin-bottom:40px;
+.cardapio {
+  width: 100%;
+  max-width: 1200px;
+  background: #e8d2a8;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin-bottom: 40px;
 }
 
-.header{
-background:#000;
-color:#d6a86b;
-text-align:center;
-padding:20px;
-letter-spacing:2px;
+.header {
+  background: #000;
+  color: #d6a86b;
+  text-align: center;
+  padding: 20px;
+  letter-spacing: 2px;
 }
 
-.imagens img{
-height:180px;
-object-fit:cover;
-width:100%;
+.imagens img {
+  height: 280px;
+  object-fit: cover;
+  width: 100%;
+  display: block;
 }
 
-.conteudo{
-padding:40px;
-color: #000;
+/* =========================================
+   ESTILOS PARA AS IMAGENS LATERAIS VERTICAIS
+   ========================================= */
+
+/* Mobile: Imagens empilhadas tem altura fixa para não sumirem */
+.imagens-verticais {
+  display: flex;
+  flex-direction: column;
 }
 
-.categoria{
-font-weight:bold;
-margin-bottom:20px;
-color: #000;
+.imagens-verticais img {
+  width: 100%;
+  height: 200px; /* Altura fixa no celular quando a coluna desce */
+  object-fit: cover;
+  display: block;
 }
 
-.item{
-font-size:25px;
-margin-bottom:6px;
-
+/* Desktop: A mágica do flexbox para preencher toda a altura da tela */
+@media (min-width: 768px) {
+  .stretch-row {
+    display: flex;
+    align-items: stretch;
+  }
+  
+  .imagens-verticais {
+    height: auto;
+  }
+  
+  .imagens-verticais img {
+    flex: 1 1 0;
+    height: 0; /* A mágica para forçar o flexbox a preencher todo o espaço vertical */
+    min-height: 0;
+  }
 }
 
-.descItem{
-font-size:18px;
-margin-bottom:10px;
-color:#333;
+.conteudo {
+  padding: 40px;
+  color: #000;
 }
 
-.rodape{
-padding:20px;
+.categoria {
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #000;
 }
 
-.logoRodape{
-width:70px;
+.item {
+  font-size: 25px;
+  margin-bottom: 6px;
 }
 
-/* Estilizando apenas a imagem da seção Chapa */
-.img3{
+.descItem {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.rodape {
+  padding: 20px;
+}
+
+.logoRodape {
+  width: 70px;
+}
+
+.img3 {
+  width: 100%;
+}
+
+.chapa {
   height: 500px;
-object-fit:cover;
-width:100%;
+  width: 100%;
+  object-fit: cover;
+  display: block;
 }
-.chapa{
-      height: 500px;
-object-fit:cover;
-width:100%;
+
+/* =========================================
+   ESTILOS PARA A SEÇÃO DE PIZZAS 
+   ========================================= */
+
+.preco-especial {
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: -15px;
+  margin-bottom: 25px;
+  color: #000;
+}
+
+.caixa-precos-pizza {
+  border: 2px solid #d6a86b; 
+  background: rgba(214, 168, 107, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 90%;
+}
+
+.caixa-precos-pizza h5 {
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+.obs-pizza {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.borda-pizza {
+  font-size: 18px;
+  color: #000;
+  margin-bottom: 0;
 }
