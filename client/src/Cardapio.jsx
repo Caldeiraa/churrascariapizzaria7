@@ -62,9 +62,9 @@ function Cardapio() {
         </div>
 
         <div className="contatos-footer">
-          <span><i className="fab fa-whatsapp"></i> (27) 9 9759-9168</span>
-          <span><i className="fas fa-phone"></i> (27) 3354-0550</span>
-          <span><i className="fab fa-instagram"></i> @CHURRASCARIA.7</span>
+          <a href="https://wa.me/5527997599168" target="_blank" rel="noreferrer" className="link-contato"><i className="fab fa-whatsapp"></i> (27) 9 9759-9168</a>
+          <a href="tel:+552733540550" className="link-contato"><i className="fas fa-phone"></i> (27) 3354-0550</a>
+          <a href="https://instagram.com/CHURRASCARIA.7" target="_blank" rel="noreferrer" className="link-contato"><i className="fab fa-instagram"></i> @CHURRASCARIA.7</a>
         </div>
       </div>
 
@@ -107,6 +107,11 @@ function Cardapio() {
           <Item cod="0030" nome="FAROFA" preco="R$10,00" />
           <Item cod="0031" nome="VINAGRETE" preco="R$10,00" />
           <Item cod="0032" nome="BANANA FRITA" preco="R$20,00" />
+        </div>
+        
+        <div className="rodape">
+          <span className="numero-pagina">1</span>
+          <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
 
@@ -166,7 +171,8 @@ function Cardapio() {
           </div>
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">2</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -194,7 +200,8 @@ function Cardapio() {
           <Desc texto="400g de carne, 400g aipim, vinagrete, molho e farofa." />
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">3</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -219,7 +226,8 @@ function Cardapio() {
           <img src={Executivo} className="chapa" alt="Executivo" />
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">4</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -318,7 +326,8 @@ function Cardapio() {
           </div>
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">5</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -401,7 +410,8 @@ function Cardapio() {
           </div>
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">6</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -436,7 +446,8 @@ function Cardapio() {
           <Item cod="1029" nome="EMBALAGEM PARA VIAGEM" preco="R$3,00" />
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">7</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -511,7 +522,8 @@ function Cardapio() {
           </div>
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">8</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -582,7 +594,8 @@ function Cardapio() {
           </div>
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">9</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -632,7 +645,8 @@ function Cardapio() {
           </div>
         </div>
 
-        <div className="rodape text-center">
+        <div className="rodape">
+          <span className="numero-pagina">10</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
@@ -641,6 +655,12 @@ function Cardapio() {
       <a href="#inicio" className="btn-voltar-topo">
         ⬆ VOLTAR AO INÍCIO
       </a>
+
+      {/* CRÉDITOS DESENVOLVEDOR */}
+      <div className="creditos-footer">
+        <p>Desenvolvido por <strong>caldeiraDev</strong></p>
+        <p><a href="https://wa.me/5527996276436" target="_blank" rel="noreferrer">27 9 9627-6436</a> | <a href="mailto:mirilo.bxd@gmail.com">mirilo.bxd@gmail.com</a></p>
+      </div>
 
     </div>
   );

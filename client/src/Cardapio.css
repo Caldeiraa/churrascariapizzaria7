@@ -101,7 +101,6 @@ html {
 
 .contatos-footer {
   background: #000;
-  color: #d6a86b;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -112,8 +111,20 @@ html {
   border-top: 4px solid #d6a86b;
 }
 
+.link-contato {
+  color: #d6a86b;
+  text-decoration: none;
+  transition: 0.2s;
+  margin: 5px 0;
+}
+
+.link-contato:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
 /* =========================================
-   BOTÃO FLUTUANTE (VOLTAR AO INÍCIO)
+   BOTÃO FLUTUANTE (VOLTAR AO INÍCIO) E CRÉDITOS
    ========================================= */
 .btn-voltar-topo {
   position: fixed;
@@ -136,6 +147,28 @@ html {
   background: #d6a86b;
   color: #000;
   text-decoration: none;
+}
+
+.creditos-footer {
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.creditos-footer p {
+  margin: 5px 0;
+}
+
+.creditos-footer a {
+  color: #000;
+  text-decoration: none;
+}
+
+.creditos-footer a:hover {
+  text-decoration: underline;
 }
 
 /* =========================================
@@ -252,11 +285,25 @@ html {
 }
 
 /* =========================================
-   RODAPÉ
+   RODAPÉ (COM NÚMERO DA PÁGINA)
    ========================================= */
 .rodape {
-  padding: 15px;
+  padding: 15px 20px;
   background-color: #f7e6c4;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+}
+
+.numero-pagina {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: clamp(24px, 5vw, 32px);
+  font-weight: bold;
+  font-family: Impact, sans-serif;
+  color: #000;
 }
 
 .logoRodape {
