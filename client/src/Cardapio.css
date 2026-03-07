@@ -1,4 +1,11 @@
 /* =========================================
+   ATIVA A ROLAGEM SUAVE (SMOOTH SCROLL)
+   ========================================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================================
    BASE E ESTRUTURA
    ========================================= */
 .pagina {
@@ -21,6 +28,117 @@
 }
 
 /* =========================================
+   TELA INICIAL (MENU INTERATIVO)
+   ========================================= */
+.menu-interativo {
+  width: 100%;
+  max-width: 600px;
+  background: #e8d2a8;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 50px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+
+.menu-interativo-header {
+  background: #000;
+  color: #d6a86b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px;
+  border-bottom: 4px solid #d6a86b;
+}
+
+.titulo-interativo h2 {
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-family: Impact, sans-serif;
+  font-size: clamp(24px, 6vw, 36px);
+}
+
+.logo-interativo-container {
+  border: 2px solid #d6a86b;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.logo-interativo {
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+}
+
+.botoes-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+}
+
+.btn-interativo {
+  background: #000;
+  color: #d6a86b;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: clamp(14px, 4vw, 18px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+}
+
+.btn-interativo:hover, .btn-interativo:active {
+  background: #222;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+.contatos-footer {
+  background: #000;
+  color: #d6a86b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px 10px;
+  font-weight: bold;
+  font-size: clamp(12px, 3vw, 15px);
+  border-top: 4px solid #d6a86b;
+}
+
+/* =========================================
+   BOTÃO FLUTUANTE (VOLTAR AO INÍCIO)
+   ========================================= */
+.btn-voltar-topo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #000;
+  color: #d6a86b;
+  padding: 10px 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+  z-index: 1000;
+  border: 2px solid #d6a86b;
+  transition: 0.3s;
+}
+
+.btn-voltar-topo:hover {
+  background: #d6a86b;
+  color: #000;
+  text-decoration: none;
+}
+
+/* =========================================
    TIPOGRAFIA RESPONSIVA
    ========================================= */
 .header {
@@ -31,7 +149,6 @@
   letter-spacing: 1px;
 }
 
-/* Clamp: (mínimo, flexível, máximo) - perfeito para responsividade */
 .header h1 {
   font-size: clamp(20px, 4vw, 32px);
   margin: 0;
@@ -39,7 +156,7 @@
 }
 
 .conteudo {
-  padding: 25px 15px; /* Menos padding no celular */
+  padding: 25px 15px;
   color: #000;
 }
 
@@ -51,7 +168,6 @@
 }
 
 .item {
-  /* No celular fica 16px, no PC vai até 22px */
   font-size: clamp(16px, 3vw, 22px); 
   font-weight: 600;
   margin-bottom: 4px;
@@ -69,20 +185,19 @@
    IMAGENS RESPONSIVAS
    ========================================= */
 .imagens img {
-  height: 150px; /* Menor no celular */
+  height: 150px;
   object-fit: cover;
   width: 100%;
   display: block;
 }
 
 .chapa {
-  height: 200px; /* Menor no celular */
+  height: 200px;
   width: 100%;
   object-fit: cover;
   display: block;
 }
 
-/* Esconde as imagens verticais de drinks no celular para poupar espaço de rolagem */
 .imagens-verticais {
   display: flex;
   flex-direction: column;
@@ -141,11 +256,11 @@
    ========================================= */
 .rodape {
   padding: 15px;
-  background-color: #f7e6c4; /* Dá um leve destaque ao rodapé */
+  background-color: #f7e6c4;
 }
 
 .logoRodape {
-  width: 50px; /* Menor no mobile */
+  width: 50px;
 }
 
 /* =========================================
@@ -161,7 +276,7 @@
   }
 
   .imagens img {
-    height: 280px; /* Volta ao tamanho original no PC */
+    height: 280px;
   }
 
   .chapa {

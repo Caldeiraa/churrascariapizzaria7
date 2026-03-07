@@ -31,8 +31,46 @@ function Cardapio() {
   return (
     <div className="pagina">
 
+      {/* ======================================= */}
+      {/* MENU INICIAL INTERATIVO                 */}
+      {/* ======================================= */}
+      <div className="menu-interativo" id="inicio">
+        <div className="menu-interativo-header">
+          <div className="titulo-interativo">
+            <h2 className="m-0">CARDÁPIO</h2>
+            <h2 className="m-0">INTERATIVO</h2>
+          </div>
+          <div className="logo-interativo-container">
+             <img src={LogoImg} alt="Logo" className="logo-interativo" />
+          </div>
+        </div>
+
+        <div className="botoes-container">
+          <a href="#entradas" className="btn-interativo">ENTRADAS E GUARNIÇÕES <span>👆🏼</span></a>
+          <a href="#carnes" className="btn-interativo">CARNES NA CHURRASQUEIRA <span>👆🏼</span></a>
+          <a href="#chapa" className="btn-interativo">CHAPA <span>👆🏼</span></a>
+          <a href="#executivo" className="btn-interativo">EXECUTIVO <span>👆🏼</span></a>
+          <a href="#pizzas-salgadas" className="btn-interativo">PIZZAS SALGADAS <span>👆🏼</span></a>
+          <a href="#pizzas-doces" className="btn-interativo">PIZZAS DOCES <small>E SOBREMESAS</small> <span>👆🏼</span></a>
+          <a href="#peixes" className="btn-interativo">PEIXES <span>👆🏼</span></a>
+          <a href="#drinks" className="btn-interativo">DRINKS <span>👆🏼</span></a>
+          <a href="#drinks-sem-alcool" className="btn-interativo">DRINKS SEM ÁLCOOL <span>👆🏼</span></a>
+          <a href="#sucos" className="btn-interativo">SUCOS E REFRIGERANTES <span>👆🏼</span></a>
+          <a href="#cervejas" className="btn-interativo">CERVEJAS E CHOPPS <span>👆🏼</span></a>
+          <a href="#energeticos" className="btn-interativo">ENERGÉTICOS <span>👆🏼</span></a>
+          <a href="#bebidas-alcoolicas" className="btn-interativo">BEBIDAS ALCOÓLICAS <span>👆🏼</span></a>
+        </div>
+
+        <div className="contatos-footer">
+          <span><i className="fab fa-whatsapp"></i> (27) 9 9759-9168</span>
+          <span><i className="fas fa-phone"></i> (27) 3354-0550</span>
+          <span><i className="fab fa-instagram"></i> @CHURRASCARIA.7</span>
+        </div>
+      </div>
+
+      {/* ======================================= */}
       {/* PAGINA 1 - ENTRADAS E GUARNIÇÕES */}
-      <div className="cardapio">
+      <div className="cardapio mt-4" id="entradas">
         <div className="header">
           <h1>ENTRADAS E GUARNIÇÕES</h1>
         </div>
@@ -73,7 +111,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 2 - CARNES NA CHURRASQUEIRA */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="carnes">
         <div className="header">
           <h1>CARNES NA CHURRASQUEIRA</h1>
         </div>
@@ -134,7 +172,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 3 - CHAPA */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="chapa">
         <div className="header">
           <h1>CHAPA</h1>
         </div>
@@ -162,7 +200,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 4 - EXECUTIVO */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="executivo">
         <div className="header">
           <h1>EXECUTIVO</h1>
         </div>
@@ -187,7 +225,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 5 - PIZZAS SALGADAS */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="pizzas-salgadas">
         <div className="header">
           <h1>PIZZAS SALGADAS</h1>
         </div>
@@ -286,9 +324,8 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 6 - PIZZAS DOCES E SOBREMESAS */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="pizzas-doces">
         
-        {/* PIZZAS DOCES */}
         <div className="header">
           <h1>PIZZAS DOCES</h1>
         </div>
@@ -332,7 +369,6 @@ function Cardapio() {
           </div>
         </div>
 
-        {/* 3 Imagens das Pizzas Doces */}
         <div className="row m-0 imagens">
           <div className="col-4 p-0">
             <img src={Brigadeiro} className="img-fluid" alt="Pizza Doce Banana" />
@@ -345,7 +381,6 @@ function Cardapio() {
           </div>
         </div>
 
-        {/* SOBREMESAS */}
         <div className="header mt-2">
           <h1>SOBREMESAS</h1>
         </div>
@@ -372,7 +407,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 7 - PEIXES */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="peixes">
         <div className="header">
           <h1>PEIXES</h1>
         </div>
@@ -407,7 +442,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 8 - BEBIDAS (DRINKS) */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="drinks">
         <div className="header">
           <h1>BEBIDAS</h1>
         </div>
@@ -482,7 +517,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 9 - BEBIDAS (DRINKS SEM ÁLCOOL, SUCOS E REFRIGERANTES) */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="drinks-sem-alcool">
         <div className="header">
           <h1>BEBIDAS</h1>
         </div>
@@ -506,7 +541,7 @@ function Cardapio() {
             <Item cod="1027" nome="ORANGE APPLE" preco="R$20,00" />
             <Desc texto="Limão, xarope de maçã, manjericão e suco de laranja." />
 
-            <h3 className="categoria mt-5 mb-1">SUCOS</h3>
+            <h3 className="categoria mt-5 mb-1" id="sucos">SUCOS</h3>
             <h5 className="mb-0 font-weight-bold">R$12,00</h5>
             <p className="mb-4 text-muted" style={{fontSize: '13px'}}>*exceto laranja com acerola.</p>
             
@@ -553,7 +588,7 @@ function Cardapio() {
       </div>
 
       {/* PAGINA 10 - BEBIDAS (CERVEJAS E ALCOÓLICAS) */}
-      <div className="cardapio mt-4">
+      <div className="cardapio mt-4" id="cervejas">
         <div className="header">
           <h1>BEBIDAS</h1>
         </div>
@@ -575,10 +610,10 @@ function Cardapio() {
             <Item cod="1022" nome="AMSTEL (600ML)" preco="R$13,00" />
             <Item cod="1023" nome="PETRA (600ML)" preco="R$12,00" />
 
-            <h3 className="categoria mt-5 mb-4">ENERGÉTICOS</h3>
+            <h3 className="categoria mt-5 mb-4" id="energeticos">ENERGÉTICOS</h3>
             <Item cod="0087" nome="RED BULL" preco="R$16,00" />
 
-            <h3 className="categoria mt-5 mb-4">BEBIDAS ALCOÓLICAS</h3>
+            <h3 className="categoria mt-5 mb-4" id="bebidas-alcoolicas">BEBIDAS ALCOÓLICAS</h3>
             <Item cod="0090" nome="WHISKY 12 ANOS" preco="R$35,00" />
             <Item cod="0091" nome="WHISKY 8 ANOS" preco="R$25,00" />
             <Item cod="0092" nome="TEQUILA" preco="R$20,00" />
@@ -601,6 +636,11 @@ function Cardapio() {
           <img src={LogoImg} alt="Logo" className="logoRodape" />
         </div>
       </div>
+
+      {/* BOTÃO VOLTAR AO INÍCIO FLUTUANTE */}
+      <a href="#inicio" className="btn-voltar-topo">
+        ⬆ VOLTAR AO INÍCIO
+      </a>
 
     </div>
   );
