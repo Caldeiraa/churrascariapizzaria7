@@ -86,7 +86,7 @@ function Cardapio() {
 
         <div className="conteudo text-center">
           <h3 className="categoria">ENTRADAS</h3>
-          <Item cod="0014" nome="KIBE (500G)" preco="R$50,00" />
+          <Item cod="0014" nome="KIEBER (500G)" preco="R$50,00" />
           <Item cod="0015" nome="FRITAS (500G)" preco="R$35,00" />
           <Item cod="0016" nome="AIPIM (500G)" preco="R$30,00" />
           <Item cod="0017" nome="FRITAS COM CHEDDAR E BACON (500G)" preco="R$50,00" />
