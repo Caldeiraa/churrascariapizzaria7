@@ -440,7 +440,7 @@ function Cardapio() {
 
           <br />
           <Item cod="1313" nome="CASQUINHA DE SIRI" preco="R$35,00" />
-          <Item cod="0024" nome="CAMARÃO A DORE" preco="R$70,00" />
+          <Item cod="0024" nome="CAMARÃO A DORE" preco="R$90,00" />
           <Item cod="0025" nome="GURJÃO DE TILÁPIA" preco="R$70,00" />
           <Item cod="0026" nome="LULA EM ANEL (300G)" preco="R$50,00" />
           <Item cod="1029" nome="EMBALAGEM PARA VIAGEM" preco="R$3,00" />
@@ -571,8 +571,8 @@ function Cardapio() {
             <Item cod="1017" nome="SUCO DE UVA INTEGRAL" preco="R$18,00" />
 
             <h3 className="categoria mt-5 mb-4">ÁGUA</h3>
-            <Item cod="0076" nome="ÁGUA MINERAL S/ GÁS" preco="R$5,00" />
-            <Item cod="0077" nome="ÁGUA MINERAL C/ GÁS" preco="R$6,00" />
+            <Item cod="0076" nome="ÁGUA MINERAL S/ GÁS" preco="R$6,00" />
+            <Item cod="0077" nome="ÁGUA MINERAL C/ GÁS" preco="R$7,00" />
 
             <h3 className="categoria mt-5 mb-2">REFRIGERANTES</h3>
             <h5 className="font-weight-bold mb-3">REFRIGERANTE LATA | R$8,00</h5>
