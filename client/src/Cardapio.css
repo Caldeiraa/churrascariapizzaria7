@@ -248,7 +248,7 @@ html {
 .preco-especial {
   font-size: clamp(12px, 2vw, 15px);
   font-weight: bold;
-  margin-top: -10px;
+  margin-top: 30px;
   margin-bottom: 25px;
   color: #222;
 }

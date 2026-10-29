@@ -41,7 +41,7 @@ function Cardapio() {
             <h2 className="m-0">INTERATIVO</h2>
           </div>
           <div className="logo-interativo-container">
-             <img src={LogoImg} alt="Logo" className="logo-interativo" />
+            <img src={LogoImg} alt="Logo" className="logo-interativo" />
           </div>
         </div>
 
@@ -63,7 +63,6 @@ function Cardapio() {
 
         <div className="contatos-footer">
           <a href="https://wa.me/5527997599168" target="_blank" rel="noreferrer" className="link-contato"><i className="fab fa-whatsapp"></i> (27) 9 9759-9168</a>
-          <a href="tel:+552733540550" className="link-contato"><i className="fas fa-phone"></i> (27) 3354-0550</a>
           <a href="https://instagram.com/CHURRASCARIA.7" target="_blank" rel="noreferrer" className="link-contato"><i className="fab fa-instagram"></i> @CHURRASCARIA.7</a>
         </div>
       </div>
@@ -86,19 +85,19 @@ function Cardapio() {
 
         <div className="conteudo text-center">
           <h3 className="categoria">ENTRADAS</h3>
-          <Item cod="0014" nome="KIEBER (500G)" preco="R$50,00" />
-          <Item cod="0015" nome="FRITAS (500G)" preco="R$35,00" />
-          <Item cod="0016" nome="AIPIM (500G)" preco="R$30,00" />
-          <Item cod="0017" nome="FRITAS COM CHEDDAR E BACON (500G)" preco="R$50,00" />
-          <Item cod="0018" nome="ANEL DE CEBOLA (200G)" preco="R$25,00" />
+          <Item cod="0014" nome="KIEBER (500G)" preco="R$65,00" />
+          <Item cod="0015" nome="FRITAS (500G)" preco="R$40,00" />
+          <Item cod="0016" nome="AIPIM (500G)" preco="R$40,00" />
+          <Item cod="0017" nome="FRITAS COM CHEDDAR E BACON (500G)" preco="R$60,00" />
+          <Item cod="0018" nome="ANEL DE CEBOLA (200G)" preco="R$35,00" />
           <Item cod="0019" nome="SALAMINHO ITALIANO (100G)" preco="R$35,00" />
-          <Item cod="0020" nome="BOLINHO DE BACALHAU (12 UN.)" preco="R$60,00" />
-          <Item cod="0021" nome="PASTEL DE CAMARÃO (10 UN.)" preco="R$50,00" />
-          <Item cod="0022" nome="PASTEL DE SIRI (10 UN.)" preco="R$50,00" />
-          <Item cod="1018" nome="PASTEL DE BACALHAU" preco="R$50,00" />
-          <Item cod="0012" nome="TORRESMO PORÇÃO" preco="R$35,00" />
-          <Item cod="0023" nome="TORRESMO COM AIPIM" preco="R$45,00" />
-          <Item cod="0010" nome="BOLINHO DE COSTELA" preco="R$50,00" />
+          <Item cod="0020" nome="BOLINHO DE BACALHAU (12 UN.)" preco="R$70,00" />
+          <Item cod="0021" nome="PASTEL DE CAMARÃO (10 UN.)" preco="R$60,00" />
+          <Item cod="0022" nome="PASTEL DE SIRI (10 UN.)" preco="R$60,00" />
+          <Item cod="1018" nome="PASTEL DE BACALHAU" preco="R$60,00" />
+          <Item cod="0112" nome="TORRESMO PORÇÃO" preco="R$40,00" />
+          <Item cod="0023" nome="TORRESMO COM AIPIM" preco="R$50,00" />
+          <Item cod="00101" nome="BOLINHO DE COSTELA" preco="R$65,00" />
 
           <h3 className="categoria mt-5">GUARNIÇÕES</h3>
           <Item cod="0027" nome="ARROZ BRANCO" preco="R$15,00" />
@@ -108,7 +107,7 @@ function Cardapio() {
           <Item cod="0031" nome="VINAGRETE" preco="R$10,00" />
           <Item cod="0032" nome="BANANA FRITA" preco="R$20,00" />
         </div>
-        
+
         <div className="rodape">
           <span className="numero-pagina">1</span>
           <img src={LogoImg} alt="Logo" className="logoRodape" />
@@ -134,39 +133,56 @@ function Cardapio() {
           <h3 className="categoria text-center">COM ACOMPANHAMENTO</h3>
           <div className="row">
             <div className="col-md-6">
-              <Item cod="0001" nome="PICANHA DA RUA 7" preco="R$160,00" />
+              <Item cod="0001" nome="PICANHA DA RUA 7" preco="R$170,00" />
               <Desc texto="500g de carne, arroz, feijão tropeiro, fritas e vinagrete." />
 
-              <Item cod="0002" nome="PICANHA FAMÍLIA" preco="R$220,00" />
+              <Item cod="0002" nome="PICANHA FAMÍLIA" preco="R$230,00" />
               <Desc texto="1kg de picanha, arroz, feijão tropeiro, fritas, farofa e vinagrete." />
 
-              <Item cod="0004" nome="ESPETO MISTO" preco="R$99,00" />
-              <Desc texto="200g de carne, 200g de picanha suína e 2 unidades de linguiça." />
+              <Item cod="0004" nome="ESPETO MISTO" preco="R$110,00" />
+              <Desc texto="200g de carne, 200g de picanha suína e 2 unidades de linguiça. Acompanha batata frita, farofa e vinagrete." />
 
-              <Item cod="0005" nome="PICANHA SUÍNA" preco="R$85,00" />
+              <Item cod="0005" nome="PICANHA SUÍNA" preco="R$95,00" />
               <Desc texto="500g de picanha suína, arroz, feijão tropeiro, fritas e vinagrete." />
 
-              <Item cod="0006" nome="ESPETO CONTRA FILÉ" preco="R$120,00" />
-              <Desc texto="500g de carne, arroz, feijão e fritas." />
+              <Item cod="0006" nome="CORAÇÃO DE ALCATRA (500G)" preco="R$130,00" />
+              <Desc texto="500g de carne, arroz, feijão tropeiro, fritas e vinagrete." />
 
-              <Item cod="0007" nome="ESPETO BIFE DE CONTRA FILÉ" preco="R$180,00" />
-              <Item cod="0009" nome="ESPETO DE LINGUIÇA (4 UN.)" preco="R$40,00" />
-              <Item cod="0010" nome="ESPETO DE CORAÇÃO DE FRANGO (20 UN.)" preco="R$30,00" />
+              <Item cod="0007" nome="ESPETO CORAÇÃO DE ALCATRA" preco="R$190,00" />
+              <Desc texto="1kg de carne, arroz, feijão tropeiro, farofa, vinagrete e fritas." />
+
+              <Item cod="0009" nome="ESPETO DE LINGUIÇA (4 UN.)" preco="R$50,00" />
+              <Item cod="0010" nome="ESPETO DE CORAÇÃO DE FRANGO (20 UN.)" preco="R$40,00" />
             </div>
 
             <div className="col-md-6 mt-4 mt-md-0">
               <Item cod="0011" nome="PÃO DE ALHO (UN.)" preco="R$10,00" />
               <Item cod="0012" nome="QUEIJO COALHO (300G)" preco="R$45,00" />
+              <Desc texto="Acompanha delicioso melado de cana." />
+
               <Item cod="0013" nome="SALADA FRESCA" preco="R$50,00" />
               <Desc texto="Alface americana, rúcula, tomate, palmito, azeite, presunto e queijo." />
 
-              <Item cod="0102" nome="CARNE DE SOL (500G)" preco="R$73,00" />
-              <Item cod="00001" nome="PICANHA (500G)" preco="R$90,00" />
-              <Item cod="00002" nome="PICANHA (1KG)" preco="R$170,00" />
-              <Item cod="00004" nome="ESPETO MISTO" preco="R$80,00" />
-              <Item cod="00005" nome="PICANHA SUÍNA (500G)" preco="R$50,00" />
-              <Item cod="00006" nome="CONTRA FILÉ (500G)" preco="R$80,00" />
-              <Item cod="00003" nome="TULIPA DE FRANGO (08 UN.)" preco="R$35,00" />
+              <Item cod="0102" nome="CARNE DE SOL (500G)" preco="R$85,00" />
+              <Desc texto="Vinagrete e farofa." />
+
+              <Item cod="00001" nome="PICANHA (500G)" preco="R$100,00" />
+              <Desc texto="Vinagrete e farofa." />
+
+              <Item cod="00002" nome="PICANHA (1KG)" preco="R$180,00" />
+              <Desc texto="Vinagrete e farofa." />
+
+              <Item cod="00004" nome="ESPETO MISTO" preco="R$90,00" />
+              <Desc texto="Vinagrete e farofa." />
+
+              <Item cod="00005" nome="PICANHA SUÍNA (500G)" preco="R$60,00" />
+              <Desc texto="Vinagrete e farofa." />
+
+              <Item cod="00006" nome="CORAÇÃO DE ALCATRA (500G)" preco="R$90,00" />
+              <Desc texto="Vinagrete e farofa." />
+
+              <Item cod="0003" nome="TULIPA DE FRANGO (08 UN.)" preco="R$40,00" />
+              <Desc texto="Vinagrete e farofa." />
             </div>
           </div>
         </div>
@@ -192,9 +208,9 @@ function Cardapio() {
           <Desc texto="Molho, vinagrete e farofa." />
           <Item cod="0109" nome="PICANHA COM FRITAS" preco="R$90,00" />
           <Desc texto="300g de carne, 300g fritas, vinagrete, molho e farofa." />
-          <Item cod="00111" nome="CONTRA FILÉ(500G)" preco="R$70,00" />
+          <Item cod="0111" nome="CORAÇÃO DE ALCATRA (500G)" preco="R$70,00" />
           <Desc texto="Molho, vinagrete e farofa." />
-          <Item cod="0113" nome="FILÉ COM FRITAS " preco="R$80,00" />
+          <Item cod="0113" nome="FILÉ COM FRITAS" preco="R$80,00" />
           <Desc texto="300g de carne, 300g fritas, vinagrete, molho e farofa." />
           <Item cod="0114" nome="CARNE DE SOL COM AIPIM" preco="R$90,00" />
           <Desc texto="400g de carne, 400g aipim, vinagrete, molho e farofa." />
@@ -213,13 +229,13 @@ function Cardapio() {
         </div>
 
         <div className="conteudo text-center">
-          <Item cod="1010" nome="CONTRA FILÉ" preco="R$40,00" />
+          <Item cod="1010" nome="CONTRA FILÉ" preco="R$45,00" />
           <Desc texto="Arroz, feijão, fritas, ovo, vinagrete e farofa." />
-          <Item cod="1011" nome="FRANGO" preco="R$40,00" />
-          <Desc texto="Arroz, feijão, fritas, ovo, vinagrete e farofa" />
-          <Item cod="1012" nome="PEIXE" preco="R$40,00" />
-          <Desc texto="Arroz, feijão, fritas, vinagrete e farofa" />
-          <Item cod="1013" nome="PICANHA " preco="R$50,00" />
+          <Item cod="1011" nome="FRANGO" preco="R$45,00" />
+          <Desc texto="Arroz, feijão, fritas, ovo, vinagrete e farofa." />
+          <Item cod="1012" nome="PEIXE" preco="R$45,00" />
+          <Desc texto="Arroz, feijão, fritas, vinagrete e farofa." />
+          <Item cod="1013" nome="PICANHA" preco="R$55,00" />
         </div>
 
         <div className="img3">
@@ -290,22 +306,23 @@ function Cardapio() {
 
               <Item cod="0048" nome="BACALHAU*" />
               <Desc texto="Mussarela, molho de tomate, bacalhau, palmito, cebola, azeitona e orégano." />
+              
               <p className="preco-especial">* [ 6 fat: P: R$53,00 / 8 fat: M: R$63,00 / 10 fat: G: R$73,00 ]</p>
 
               <div className="caixa-precos-pizza mt-4 mx-auto text-center">
                 <h5 className="font-weight-bold mb-3">TAMANHOS E PREÇOS</h5>
-                
+
                 <div className="d-flex justify-content-around flex-wrap align-items-center mb-3 gap-2">
                   <div className="text-center pizza-size">
-                    <p className="mb-1">6 FATIAS<br/>P R$48,00</p>
+                    <p className="mb-1">6 FATIAS<br />P R$50,00</p>
                     <IconePizza fatias={6} />
                   </div>
                   <div className="text-center pizza-size">
-                    <p className="mb-1">8 FATIAS<br/>M R$58,00</p>
+                    <p className="mb-1">8 FATIAS<br />M R$60,00</p>
                     <IconePizza fatias={8} />
                   </div>
                   <div className="text-center pizza-size">
-                    <p className="mb-1">10 FATIAS<br/>G R$68,00</p>
+                    <p className="mb-1">10 FATIAS<br />G R$70,00</p>
                     <IconePizza fatias={10} />
                   </div>
                 </div>
@@ -334,7 +351,7 @@ function Cardapio() {
 
       {/* PAGINA 6 - PIZZAS DOCES E SOBREMESAS */}
       <div className="cardapio mt-4" id="pizzas-doces">
-        
+
         <div className="header">
           <h1>PIZZAS DOCES</h1>
         </div>
@@ -350,24 +367,27 @@ function Cardapio() {
 
               <Item cod="0051" nome="BRIGADEIRO COM MORANGO*" />
               <Desc texto="Chocolate, leite condensado e morango." />
+              <Item cod="0604" nome="ROMEU E JULIETA" />
+              <Desc texto="Mussarela e goiabada." />
               <p className="preco-especial">* [ 6 fat: P: R$48,00 / 8 fat: M: R$58,00 / 10 fat: G: R$60,00 ]</p>
+
             </div>
 
             <div className="col-md-5">
               <div className="caixa-precos-pizza mx-auto w-100 text-center">
                 <h5 className="font-weight-bold mb-3">TAMANHOS E PREÇOS</h5>
-                
+
                 <div className="d-flex justify-content-around flex-wrap align-items-center mb-3 gap-2">
                   <div className="text-center pizza-size">
-                    <p className="mb-1">6 FATIAS<br/>P R$45,00</p>
+                    <p className="mb-1">6 FATIAS<br />P R$45,00</p>
                     <IconePizza fatias={6} />
                   </div>
                   <div className="text-center pizza-size">
-                    <p className="mb-1">8 FATIAS<br/>M R$50,00</p>
+                    <p className="mb-1">8 FATIAS<br />M R$50,00</p>
                     <IconePizza fatias={8} />
                   </div>
                   <div className="text-center pizza-size">
-                    <p className="mb-1">10 FATIAS<br/>G R$55,00</p>
+                    <p className="mb-1">10 FATIAS<br />G R$55,00</p>
                     <IconePizza fatias={10} />
                   </div>
                 </div>
@@ -400,11 +420,11 @@ function Cardapio() {
           </div>
 
           <div className="col-md-6 conteudo text-center">
-            <Item cod="0052" nome="PETIT GATEAU" preco="R$28,00" />
+            <Item cod="0052" nome="PETIT GATEAU" preco="R$30,00" />
             <Desc texto="Acompanha bola de sorvete de creme." />
 
             <div className="mt-4 mt-md-5">
-              <Item cod="111" nome="TAÇA DA FELICIDADE" preco="R$28,00" />
+              <Item cod="111" nome="TAÇA DA FELICIDADE" preco="R$30,00" />
               <Desc texto="Brigadeiro, morango e sorvete." />
             </div>
           </div>
@@ -433,15 +453,15 @@ function Cardapio() {
 
         <div className="conteudo text-center">
           <Item cod="1014" nome="PEROÁ SIMPLES" preco="R$85,00" />
-          <Desc texto="2 unidades de peroá, fritas, vinagrete e farofa." />
+          <Desc texto="1 unidade de peroá, fritas, vinagrete e farofa." />
 
           <Item cod="1015" nome="PEROÁ COMPLETO" preco="R$140,00" />
-          <Desc texto="2 unidades de peroá, fritas, aipim, camarão, banana, vinagrete e farofa." />
+          <Desc texto="1 unidade de peroá, fritas, aipim, camarão, banana, vinagrete e farofa." />
 
           <br />
           <Item cod="1313" nome="CASQUINHA DE SIRI" preco="R$35,00" />
-          <Item cod="0024" nome="CAMARÃO A DORE" preco="R$90,00" />
-          <Item cod="0025" nome="GURJÃO DE TILÁPIA" preco="R$70,00" />
+          <Item cod="0024" nome="CAMARÃO À DORÊ" preco="R$80,00" />
+          <Item cod="0025" nome="GURJÃO DE TILÁPIA" preco="R$90,00" />
           <Item cod="0026" nome="LULA EM ANEL (300G)" preco="R$50,00" />
           <Item cod="1029" nome="EMBALAGEM PARA VIAGEM" preco="R$3,00" />
         </div>
@@ -469,26 +489,26 @@ function Cardapio() {
           <div className="col-md-8 conteudo text-center">
             <h3 className="categoria mb-4">DRINKS</h3>
 
-            <Item cod="1024" nome="DAIQUIRI" preco="R$18,00" />
+            <Item cod="1024" nome="DAIQUIRI" preco="R$25,00" />
             <Desc texto="Rum, limão e açúcar." />
 
-            <Item cod="0053" nome="CAIPIVODKA" preco="R$18,00" />
-            <Desc texto="Vodka Orloff, Kiwi, limão, morango, maracujá e açúcar." />
+            <Item cod="0053" nome="CAIPIVODKA" preco="R$25,00" />
+            <Desc texto="Vodka Orloff, kiwi, limão, morango, maracujá e açúcar." />
 
             <Item cod="1028" nome="CAIPIRINHA COM ABSOLUT" preco="R$30,00" />
-            <Desc texto="Absolut, Kiwi, limão, morango, maracujá e açúcar." />
+            <Desc texto="Absolut, kiwi, limão, morango, maracujá e açúcar." />
 
-            <Item cod="0054" nome="CAIPIRINHA" preco="R$15,00" />
+            <Item cod="0054" nome="CAIPIRINHA" preco="R$20,00" />
             <Desc texto="Cachaça e açúcar." />
 
-            <Item cod="0055" nome="CAIPIRÍSSIMA" preco="R$18,00" />
+            <Item cod="0055" nome="CAIPIRÍSSIMA" preco="R$25,00" />
             <Desc texto="Bacardi, limão e açúcar." />
 
             <Item cod="0056" nome="DELÍCIA DE MORANGO" preco="R$28,00" />
             <Desc texto="Morango, limão, Smirnoff e xarope de morango." />
 
-            <Item cod="0057" nome="GIN TÔNICA TRADICIONAL / SABORISADA" preco="R$28,00" />
-            <Desc texto="Gin, tônica e xarope a escolha." />
+            <Item cod="0057" nome="GIN TÔNICA TRADICIONAL OU SABORIZADA" preco="R$28,00" />
+            <Desc texto="Gin, tônica e xarope à escolha." />
 
             <Item cod="0058" nome="GIN TROPICAL" preco="R$28,00" />
             <Desc texto="Gin, tônica, energético tropical e laranja." />
@@ -502,10 +522,10 @@ function Cardapio() {
             <Item cod="0103" nome="CUBA LIBRE" preco="R$20,00" />
             <Desc texto="Rum branco, coca cola, limão e gelo." />
 
-            <Item cod="0104" nome="MARGARITA" preco="R$28,00" />
+            <Item cod="0104" nome="MARGARITA" preco="R$30,00" />
             <Desc texto="Tequila prata, triple sec, sal, limão" />
 
-            <Item cod="0105" nome="APEROL SPRITZ" preco="R$28,00" />
+            <Item cod="0105" nome="APEROL SPRITZ" preco="R$30,00" />
             <Desc texto="Aperol, espumante e água com gás." />
 
             <Item cod="0106" nome="MOJITO" preco="R$23,00" />
@@ -514,10 +534,10 @@ function Cardapio() {
             <Item cod="0085" nome="MOSCOW MULE" preco="R$28,00" />
             <Desc texto="Vodka, xarope de gengibre, limão, espuma de gengibre." />
 
-            <Item cod="0061" nome="GIN SUNSET" preco="R$28,00" />
+            <Item cod="0061" nome="GIN SUNSET" preco="R$30,00" />
             <Desc texto="Suco de laranja, gin, xarope de grenadine e espuma de sicília." />
 
-            <Item cod="1025" nome="D'MAURO" preco="R$35,00" />
+            <Item cod="1025" nome="D'MAURO" preco="R$40,00" />
             <Item cod="1026" nome="NEGRONI" preco="R$40,00" />
           </div>
         </div>
@@ -536,37 +556,37 @@ function Cardapio() {
 
         <div className="row m-0 stretch-row">
           <div className="col-md-8 conteudo text-center">
-            
+
             <h3 className="categoria mb-4">DRINKS SEM ÁLCOOL</h3>
-            <Item cod="0062" nome="SODA ITALIANA" preco="R$15,00" />
+            <Item cod="0062" nome="SODA ITALIANA" preco="R$18,00" />
             <Desc texto="Xarope de maçã verde e água com gás." />
 
-            <Item cod="0063" nome="PINK LEMONADE" preco="R$13,00" />
+            <Item cod="0063" nome="PINK LEMONADE" preco="R$15,00" />
             <Desc texto="Xarope de morango, limão tahiti, água sem gás e gelo." />
 
             <Item cod="0064" nome="SHIRLEY TEMPLE" preco="R$20,00" />
             <Desc texto="Suco de laranja, soda e xarope de morango." />
 
-            <Item cod="0065" nome="DELÍCIA DE MORANGO" preco="R$20,00" />
+            <Item cod="0065" nome="DELÍCIA DE MORANGO" preco="R$25,00" />
             <Desc texto="Morango, limão e xarope de morango." />
 
-            <Item cod="1027" nome="ORANGE APPLE" preco="R$20,00" />
+            <Item cod="1027" nome="ORANGE APPLE" preco="R$25,00" />
             <Desc texto="Limão, xarope de maçã, manjericão e suco de laranja." />
 
             <h3 className="categoria mt-5 mb-1" id="sucos">SUCOS</h3>
             <h5 className="mb-0 font-weight-bold">R$12,00</h5>
-            <p className="mb-4 text-muted" style={{fontSize: '13px'}}>*exceto laranja com acerola.</p>
-            
+            <p className="mb-4 text-muted" style={{ fontSize: '13px' }}>*exceto sabores com preço indicado.</p>
+
             <Item cod="0066" nome="ACEROLA" />
             <Item cod="0067" nome="MARACUJÁ" />
             <Item cod="0068" nome="ABACAXI" />
             <Item cod="0069" nome="ABACAXI COM HORTELÃ" />
             <Item cod="0070" nome="LARANJA" />
-            <Item cod="0071" nome="LARANJA COM ACEROLA*" preco="R$16,00" />
             <Item cod="0072" nome="GRAVIOLA" />
-            <Item cod="0073" nome="MORANGO" />
             <Item cod="0074" nome="MANGA" />
-            <br/>
+            <br />
+            <Item cod="0071" nome="LARANJA COM ACEROLA" preco="R$16,00" />
+            <Item cod="0073" nome="MORANGO" preco="R$16,00" />
             <Item cod="0075" nome="LARANJA COM MORANGO" preco="R$16,00" />
             <Item cod="1017" nome="SUCO DE UVA INTEGRAL" preco="R$18,00" />
 
@@ -575,15 +595,15 @@ function Cardapio() {
             <Item cod="0077" nome="ÁGUA MINERAL C/ GÁS" preco="R$7,00" />
 
             <h3 className="categoria mt-5 mb-2">REFRIGERANTES</h3>
-            <h5 className="font-weight-bold mb-3">REFRIGERANTE LATA | R$8,00</h5>
-            <Item cod="0078" nome="Coca cola" />
-            <Item cod="0079" nome="Fanta laranja" />
-            <Item cod="0080" nome="Fanta uva" />
+            <h5 className="font-weight-bold mb-3">REFRIGERANTE LATA | R$9,00</h5>
+            <Item cod="0078" nome="Coca-Cola" />
+            <Item cod="0079" nome="Fanta Laranja" />
+            <Item cod="0080" nome="Fanta Uva" />
             <Item cod="0081" nome="Fanta Guaraná" />
             <Item cod="0082" nome="Sprite" />
-            <br/>
+            <br />
             <Item cod="192" nome="REFRIGERANTE 2 LITROS" preco="R$18,00" />
-            
+
           </div>
 
           <div className="col-md-4 p-0 imagens-verticais d-none d-md-flex">
@@ -615,13 +635,14 @@ function Cardapio() {
           </div>
 
           <div className="col-md-8 conteudo text-center">
-            
+
             <h3 className="categoria mb-4">CERVEJAS</h3>
-            <Item cod="0083" nome="CHOPP (PETRA) (300ML)" preco="R$10,00" />
-            <Item cod="0084" nome="CHOPP (PETRA) (500ML)" preco="R$15,00" />
-            <Item cod="0086" nome="HEINEKEN (600ML)" preco="R$18,00" />
-            <Item cod="1022" nome="AMSTEL (600ML)" preco="R$13,00" />
-            <Item cod="1023" nome="PETRA (600ML)" preco="R$12,00" />
+            <Item cod="0083" nome="CHOPP PETRA PURO MALTE (300ML)" preco="R$13,00" />
+            <Item cod="0084" nome="CHOPP PETRA PURO MALTE (500ML)" preco="R$17,00" />
+            <Item cod="0086" nome="HEINEKEN (600ML)" preco="R$19,00" />
+            <Item cod="1022" nome="AMSTEL (600ML)" preco="R$14,00" />
+            <Item cod="1023" nome="PETRA (600ML)" preco="R$13,00" />
+            <Item cod="1021" nome="ORIGINAL (600ML)" preco="R$15,00" />
 
             <h3 className="categoria mt-5 mb-4" id="energeticos">ENERGÉTICOS</h3>
             <Item cod="0087" nome="RED BULL" preco="R$16,00" />
@@ -629,16 +650,17 @@ function Cardapio() {
             <h3 className="categoria mt-5 mb-4" id="bebidas-alcoolicas">BEBIDAS ALCOÓLICAS</h3>
             <Item cod="0090" nome="WHISKY 12 ANOS" preco="R$35,00" />
             <Item cod="0091" nome="WHISKY 8 ANOS" preco="R$25,00" />
-            <Item cod="0092" nome="TEQUILA" preco="R$20,00" />
-            <Item cod="0093" nome="CAMPARI" preco="R$17,00" />
+            <Item cod="0092" nome="TEQUILA" preco="R$25,00" />
+            <Item cod="0093" nome="CAMPARI" preco="R$18,00" />
             <Item cod="0094" nome="CACHAÇA CABARÉ (OURO)" preco="R$10,00" />
             <Item cod="0095" nome="CACHAÇA CABARÉ (PRATA)" preco="R$10,00" />
             <Item cod="0096" nome="VODKA ABSOLUT" preco="R$20,00" />
-            <Item cod="0097" nome="VODKA ORLOFF" preco="R$13,00" />
+            <Item cod="0097" nome="VODKA ORLOFF" preco="R$15,00" />
+            <Item cod="2209" nome="BANANINHA" preco="R$10,00" />
 
             <h3 className="categoria mt-5 mb-4">VINHOS</h3>
             <Item cod="0098" nome="RESERVADO" preco="R$70,00" />
-            <Item cod="0099" nome="ESPUMANTE" preco="CONSULTAR" />
+            <Item cod="0099" nome="ESPUMANTE" preco="R$70,00" />
             <Item cod="0100" nome="PROSECCO" preco="R$80,00" />
             <Item cod="0101" nome="VINHO TAÇA" preco="R$15,00" />
 
@@ -670,7 +692,7 @@ function Cardapio() {
 function Item({ cod, nome, preco }) {
   return (
     <div className="item">
-      <span className="text-muted" style={{fontSize: '0.8em'}}>COD {cod}</span> - {nome} {preco && `| ${preco}`}
+      <span className="text-muted" style={{ fontSize: '0.8em' }}>COD {cod}</span> - {nome} {preco && `| ${preco}`}
     </div>
   );
 }
