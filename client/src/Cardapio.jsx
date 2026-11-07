@@ -306,7 +306,7 @@ function Cardapio() {
               <Item cod="0048" nome="BACALHAU*" />
               <Desc texto="Mussarela, molho de tomate, bacalhau, palmito, cebola, azeitona e orégano." />
               
-              <p className="preco-especial">* [ 6 fat: P: R$53,00 / 8 fat: M: R$63,00 / 10 fat: G: R$73,00 ]</p>
+              <p className="preco-especial">* [ 6 fat: P: R$63,00 / 8 fat: M: R$73,00 / 10 fat: G: R$85,00 ]</p>
 
               <div className="caixa-precos-pizza mt-4 mx-auto text-center">
                 <h5 className="font-weight-bold mb-3">TAMANHOS E PREÇOS</h5>
